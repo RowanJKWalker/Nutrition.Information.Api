@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_api_gateway_rest_api" "MyDemoAPI" {
-  name = "MyDemoAPI3"
+  name = "MyDemoAPI4"
   description = "This is my API for demonstration purposes"
 }
 
