@@ -1,13 +1,9 @@
-#!/bin/bash
-
-set -o errexit -o nounset
-
-echo "before cd"
+echo "begin"
 
 cd infra
 
 echo "after cd"
 
-/opt/terraform/terraform plan
+terraform plan
 
-/opt/terraform/terraform apply
+terraform apply
