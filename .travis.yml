@@ -16,6 +16,7 @@ before_deploy:
   - sudo unzip terraform.zip -d /opt/terraform
   - sudo ln -s /opt/terraform/terraform /usr/bin/terraform
   - export PATH=$PATH:$(pwd)/infra
+  - echo $PATH
   - rm -f terraform.zip
 
 # terraform apply
