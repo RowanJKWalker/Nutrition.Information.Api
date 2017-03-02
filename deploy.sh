@@ -4,6 +4,6 @@ set -o errexit -o nounset
 
 cd infra
 
-terraform plan
+/opt/terraform/terraform plan
 
-terraform apply
+/opt/terraform/terraform apply
