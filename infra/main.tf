@@ -32,6 +32,10 @@ resource "aws_api_gateway_integration" "nutrition_information_api_v1_ping_integr
   http_method = "${aws_api_gateway_method.nutrition_information_api_v1_ping_method.http_method}"
   type = "MOCK"
   request_templates {
-    "statusCode": 200
+    "application/json" = <<EOF
+    {
+      "statusCode": 200
+    }
+    EOF
   }
 }
