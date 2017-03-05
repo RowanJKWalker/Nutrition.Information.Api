@@ -15,7 +15,7 @@ resource "aws_api_gateway_resource" "nutrition_information_api_v1" {
 
 resource "aws_api_gateway_resource" "nutrition_information_api_v1_ping" {
   rest_api_id = "${aws_api_gateway_rest_api.nutrition_information_api.id}"
-  parent_id = "${aws_api_gateway_rest_api.nutrition_information_api_v1.root_resource_id}"
+  parent_id = "${aws_api_gateway_resource.nutrition_information_api_v1.id}"
   path_part = "ping"
 }
 
