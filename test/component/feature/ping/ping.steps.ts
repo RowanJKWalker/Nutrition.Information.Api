@@ -5,7 +5,7 @@ import rp = require("request-promise");
 
 @binding()
 class PingSteps {
-    private readonly nutritionInformationApiUri: string = "<Insert URI to Ping endpoint>";
+    private readonly nutritionInformationApiUri: string = process.env.NUTRITION_INFORMATION_API_URI;
     private v1PingResponse: any;
 
     @given(/Nutrition.Information.Api is deployed/)
