@@ -34,8 +34,8 @@ class PingSteps {
 
     @then(/a response with a status 200 and empty body is returned/)
     public async thenPingResponseReceived(): Promise<void> {
-        //expect(this.v1PingResponse.statusCode).to.be.equal(200);
-        //expect(this.v1PingResponse.body).to.be.deep.equal("");
+        // expect(this.v1PingResponse.statusCode).to.be.equal(200);
+        // expect(this.v1PingResponse.body).to.be.deep.equal("");
     }
 }
 
