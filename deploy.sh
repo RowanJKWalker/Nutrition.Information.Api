@@ -20,4 +20,4 @@ export NUTRITION_INFORMATION_API_URI=$(terraform output nutrition_information_ap
 
 npm run-script test:integration
 
-echo \"yes\" | terraform destroy
+echo "yes" | terraform destroy
