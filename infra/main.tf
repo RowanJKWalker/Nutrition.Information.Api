@@ -41,5 +41,5 @@ resource "aws_api_gateway_integration" "nutrition_information_api_v1_ping_integr
 }
 
 output "nutrition_information_api_uri" {
-    value = "https://${aws_api_gateway_rest_api.nutrition_information_api.id}.execute-api.${aws.region}.amazonaws.com"
+    value = "https://${aws_api_gateway_rest_api.nutrition_information_api.id}.execute-api.us-west-2.amazonaws.com"
 }
