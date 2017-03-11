@@ -41,7 +41,7 @@ resource "aws_api_gateway_integration" "nutrition_information_api_v1_ping_integr
 }
 
 resource "aws_api_gateway_deployment" "nutrition_information_api_deployment" {
-  depends_on = ["aws_api_gateway_method.nutrition_information_api_v1_ping_method"]
+  depends_on = ["aws_api_gateway_method.nutrition_information_api_v1_ping_method", "aws_api_gateway_integration.nutrition_information_api_v1_ping_integration"]
   rest_api_id = "${aws_api_gateway_rest_api.nutrition_information_api.id}"
   stage_name = "default"
 }
